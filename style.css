@@ -1,0 +1,285 @@
+:root {
+  --ff-grafiti: "Graffiti font", sans-serif;
+  --ff-alfa: "Alfa Slab One", cursive;
+
+  --clr-dark-green: #3c6255;
+  --clr-green: #61876e;
+  --clr-light-green: #a6bb8d;
+  --clr-orange: #3e180a;
+  --clr-blue: #a7a9a3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-dark-green);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes pfk-albums {
+  0% {
+  }
+  100% {
+    height: 50vh;
+  }
+}
+
+@keyframes pfk-logo {
+  0% {
+    bottom: -1%;
+  }
+  50% {
+    bottom: 1%;
+  }
+  100% {
+    bottom: -1%;
+  }
+}
+
+.header {
+  height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+  height: 20vh;
+}
+
+.navbar li {
+  width: calc(100% / 3);
+  height: 20vh;
+  float: left;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: var(--ff-alfa);
+}
+
+.navbar li:nth-child(1) {
+  background: url(kinematografia.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar li:nth-child(1):hover {
+  position: relative;
+  animation: pfk-albums 0.5s forwards;
+}
+
+.navbar li:nth-child(2) {
+  background: url(archiwum-kinematografii.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar li:nth-child(2):hover {
+  position: relative;
+  animation: pfk-albums 0.5s forwards;
+  z-index: 1;
+}
+
+.navbar li:nth-child(3) {
+  background: url(jestem-bogiem-ep.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar li:nth-child(3):hover {
+  position: relative;
+  animation: pfk-albums 0.5s forwards;
+}
+
+.title-paktofonika {
+  font-family: var(--ff-grafiti);
+  color: var(--clr-green);
+  width: calc(100% / 3);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0);
+  font-size: 50px;
+}
+
+/* ////////////////////////////////////////////////////// */
+
+#kinematografia {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--clr-drak-green);
+}
+
+.kinematografia-list {
+  width: 50%;
+  height: 100%;
+}
+
+.kinematografia-list li {
+  margin-top: 15px;
+}
+
+.paktofonika {
+  width: 100%;
+  height: 10vh;
+  font-family: var(--ff-grafiti);
+  font-size: 1rem;
+  position: absolute;
+  bottom: 10vh;
+}
+
+#NaMocyPaktu {
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+#Priorytety {
+  height: 300vh;
+  width: 100%;
+  color: white;
+}
+
+#Gdyby {
+  height: 200vh;
+  width: 100%;
+  color: white;
+}
+
+#jaToja {
+  height: 200vh;
+  width: 100%;
+  color: white;
+}
+
+#powierzchnie {
+  height: 250vh;
+  width: 100%;
+  color: white;
+}
+
+#toNieMy {
+  height: 250vh;
+  width: 100%;
+  color: white;
+}
+
+#popatrz {
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+#chwile {
+  height: 200vh;
+  width: 100%;
+  color: white;
+}
+
+#wc {
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+#nowiny {
+  height: 150vh;
+  width: 100%;
+  color: white;
+}
+
+#niemamnie {
+  height: 300vh;
+  width: 100%;
+  color: white;
+}
+
+#jestemBogiem {
+  height: 200vh;
+  width: 100%;
+  color: white;
+}
+
+#lepiej {
+  height: 250vh;
+  width: 100%;
+  color: white;
+}
+
+#rob {
+  height: 250vh;
+  width: 100%;
+  color: white;
+}
+
+#wMoich {
+  height: 200vh;
+  width: 100%;
+  color: white;
+}
+
+#kilo {
+  height: 300vh;
+  width: 100%;
+  color: white;
+}
+/* ////////////////////////////////////////////////////// */
+
+#archiwum-kinematografi {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--clr-orange);
+}
+
+#jestem-bogiem-ep {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--clr-blue);
+}
+
+@media screen and (max-width: 600px) {
+  .navbar li {
+    font-size: 20px;
+    width: 100%;
+    height: calc(100vh / 3);
+  }
+
+  .navbar li:nth-child(1):hover {
+    position: relative;
+    animation: none;
+  }
+
+  .navbar li:nth-child(2):hover {
+    position: relative;
+    animation: none;
+  }
+
+  .navbar li:nth-child(3):hover {
+    position: relative;
+    animation: none;
+  }
+
+  .title-paktofonika {
+    display: none;
+  }
+}
