@@ -245,7 +245,7 @@ a:visited {
 }
 /* ////////////////////////////////////////////////////// */
 
-#archiwum-kinematografi {
+/* #archiwum-kinematografi {
   height: 100vh;
   width: 100%;
   background-color: var(--clr-orange);
@@ -255,7 +255,7 @@ a:visited {
   height: 100vh;
   width: 100%;
   background-color: var(--clr-blue);
-}
+} */
 
 @media screen and (max-width: 600px) {
   .navbar li {
